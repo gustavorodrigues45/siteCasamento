@@ -38,7 +38,7 @@ body {
 
 /* Novos estilos globais de fontes */
 h1,h2,h3{font-family:"Playfair Display", serif;color:var(--accent-dark);}
-.script-title{font-family:"Great Vibes", cursive;color:var(--accent);font-size:3rem;margin:1rem 0;}
+.script-title{font-family:"Great Vibes", cursive;color:var(--color-green-700);font-size:3rem;margin:1rem 0;}
 .section-title{text-align:center;margin-bottom:2rem;font-size:2rem;font-weight:600;color:var(--accent-dark);}
 
 
@@ -81,6 +81,8 @@ nav ul li a {
 
 .logo img {
   width: 100px; /* Tamanho da logo */
+  border-radius: 10px; 
+
 }
 
 .menu {
@@ -102,7 +104,7 @@ nav ul li a {
 /* ===================== SOBRE ===================== */
 .sobre{
   position:relative;
-  background:var(--cream);
+  background:var(--background-color);
   padding:4rem 1.5rem;
   overflow:hidden;
 }
@@ -129,16 +131,17 @@ nav ul li a {
   max-width:620px;
   margin:0 auto;
   font-size:1rem;
-  color: var(--text); /* Corrigido para usar variável */
+  color: var(--color-green-500); /* Alterado de --text para --color-green-500 */
 }
 .floral{
   position:absolute;
   top:0;
   width:200px;
   height:200px;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath fill='%23f7c97a' d='M64 0c5 12 5 20-4 26-9-6-9-14-4-26-14 5-22 11-26 22-4 11-4 22 0 33-11-4-19-2-26 4 12 5 20 5 26-4 6 9 6 17 4 26 11-4 18-12 22-26 4 14 11 22 22 26-2-9-2-17 4-26 6 9 14 9 26 4-7-6-15-8-26-4 4-11 4-22 0-33-4-11-12-17-26-22z'/%3E%3C/svg%3E") no-repeat center/contain;
+  background:url("data:image/svg+xml,...") no-repeat center/contain;
   opacity:.25;
   pointer-events:none;
+  display: none;
 }
 .floral--left{left:-40px;transform:rotate(-15deg);}
 .floral--right{right:-40px;transform:rotate(15deg);}
@@ -147,7 +150,7 @@ nav ul li a {
 /* ===================== TIMER ===================== */
 .timer{
   padding:4rem 1.5rem;
-  background:var(--bg);
+  background:var(--background-color);
 }
 .timer__boxes{
   display:flex;
@@ -204,6 +207,7 @@ nav ul li a {
   opacity:.18;
   pointer-events:none;
   z-index:0;
+  display: none;
 }
 .deco-roses::after{
   animation:floatRoses 14s ease-in-out infinite;
@@ -466,7 +470,7 @@ footer span {
   }
 
   .logo img {
-    width: 140px;
+    width: 95px;
   }
 
   #ceremony h1,
