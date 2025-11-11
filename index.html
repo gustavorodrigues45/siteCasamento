@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Casamento Gustavo & Jéssica</title>
+</head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./img/EA-brancosemfundo.png" alt="Logo" />
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#reception">Recepção</a></li>
+        <li><a href="#gifts">Presentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery-hover-container">
+    <img src="./img/Carrossel/gugEjejeFutebol.jpg" alt="Foto 1" class="gallery-hover-image" />
+    <img src="./img/Carrossel/guguEjejeIgrejaOuroPreto.jpg" alt="Foto 2" class="gallery-hover-image" />
+    <img src="./img/Carrossel/guguEjejepizzaria.jpg" alt="Foto 3" class="gallery-hover-image" />
+    <img src="./img/Carrossel/ouroPreto.jpg" alt="Foto 4" class="gallery-hover-image" />
+  </section>
+
+  <div class="ramo-divisor">
+    <img src="./img/oliveira.png" alt="" />
+  </div>
+
+  <section id="sobre" class="sobre">
+    <div class="floral floral--left" aria-hidden="true"></div>
+    <div class="floral floral--right" aria-hidden="true"></div>
+
+    <div class="sobre__inner">
+      <div class="sobre__avatar">
+        <img src="./img/perfilNoiva.jpg" alt="Noiva" class="avatar-noiva" />
+        <img src="./img/perfilNoivo.jpg" alt="Noivo"  class="avatar-noivo" />
+      </div>
+
+      <h2 class="script-title">Vamos nos casar</h2>
+      <p class="sobre__texto">
+        Estamos nas nuvens e queremos compartilhar todo nosso amor com você!
+        Este site foi criado com carinho para reunir informações importantes.
+        Confirme sua presença, veja nossa lista de presentes e prepare-se para viver esse momento conosco.
+        Obrigado por fazer parte da nossa história. 💛
+      </p>
+    </div>
+  </section>
+
+  <section id="timer" class="timer deco-roses">
+    <h2 class="section-title">Estamos contando os dias</h2>
+    <div class="timer__boxes">
+      <div class="tbox"><span id="dias">0</span><small>dias</small></div>
+      <div class="tbox"><span id="horas">0</span><small>horas</small></div>
+      <div class="tbox"><span id="minutos">0</span><small>minutos</small></div>
+      <div class="tbox"><span id="segundos">0</span><small>segundos</small></div>
+    </div>
+  </section>
+
+  <div class="ramo-divisor">
+    <img src="./img/oliveira.png" alt="" />
+  </div>
+
+  <section id="reception">
+    <h1>RECEPÇÃO</h1>
+    <div class="reception-container">
+      <div class="reception-info">
+        <p>
+          Após a cerimônia, convidamos todos vocês para celebrar conosco este
+          momento tão especial! Venham compartilhar conosco a alegria deste
+          dia!
+        </p>
+        <br />
+        <address>
+          Local: Pizzaria Jardim do Lago<br />
+          Endereço: Dona Rafaela, 386<br />
+          Mal. Rondon, Canoas<br />
+          CEP: 92020-030<br />
+          (Possui estacionamento interno)<br />
+        </address>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.1777620497824!2d-51.1738612!3d-29.9167842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197146984938c1%3A0xd0fdffcc7ce5727!2sPizzaria%20Jardim%20do%20Lago!5e0!3m2!1spt-BR!2sbr!4v1762803692849!5m2!1spt-BR!2sbr"
+          width="500" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <div class="ramo-divisor">
+    <img src="./img/oliveira.png" alt="" />
+  </div>
+  <section id="gifts">
+    <h1>LISTA DE PRESENTES</h1>
+    <div class="gifts-info">
+      <p>
+        A maior riqueza que temos é a presença de vocês em nossas vidas e na
+        celebração do nosso casamento! Mas caso queiram nos presentear,
+        deixamos aqui nosso PIX e lista de presentes.
+      </p>
+    </div>
+    <div class="gifts-container">
+      <ul class="gift-list">
+        <li class="gift-item">
+          <img src="./img/Pagamento/QRcodePix.png" alt="QRcode PIX" />
+          <div class="gift-details">QR code PIX<br /></div>
+          <button class="buy-button" onclick="copiarPix()">Copiar código do QR Code</button>
+        </li>
+        <li class="gift-item">
+          <img src="./img/Lista-de-Presentes/streamings.webp" alt="Streamings" />
+          <div class="gift-details">Ajudinhas para os Streamings<br />R$ 157,86</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-09844c66-92e0-4e09-959e-88500cc19f95"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Air-Fryer.png" alt="Air Fryer" />
+          <div class="gift-details">Air Fryer<br />R$ 315,72</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-3ac8ef3a-7389-4e12-ae8a-a058eaa7b380"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Aparelho-de-Jantar.png" alt="Aparelho de Jantar" />
+          <div class="gift-details">Aparelho de Jantar<br />R$ 263,10</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-42aa5b60-1cc6-48bc-979c-681e3566e414"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Batedeira.png" alt="Batedeira" />
+          <div class="gift-details">Batedeira Planetária<br />R$ 442,01</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-3903c92e-f5f9-4f0d-9a71-c19dc373fc78"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Cafeteira-Italiana.png" alt="Cafeteira Italiana" />
+          <div class="gift-details">Cafeteira Italiana<br />R$ 84,19</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-9f69efb4-3391-42b5-b274-cf5ff669e8f6"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/chaleira.png" alt="Chaleira" />
+          <div class="gift-details">Chaleira<br />R$ 73,67</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-fdf12efe-341c-4ce5-994d-92bdd13a125f"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Chaleira-Eletrica.png" alt="Chaleira Eletrica" />
+          <div class="gift-details">Chaleira Elétrica<br />R$ 168,39</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-a65e2032-a4bc-4ae6-9867-2d196f279ae9"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/conjunto-de-travessas.png" alt="Conjunto de Travessas" />
+          <div class="gift-details">Conjunto de Travessas<br />R$ 157,86</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-53261aa6-7be8-4bf5-be73-c8f8de3c5972"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/copos-de-vidro.png" alt="Conjunto de Copos de Vidro" />
+          <div class="gift-details">Conjunto de Copos de Vidro<br />R$ 84,19</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-fe6c4bf5-34a4-432c-90fd-000858eae374"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/cortina.png" alt="Cortina" />
+          <div class="gift-details">Cortina Blackout<br />R$ 157,86</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-e042419a-dd2b-4c9b-954e-0a9b6aa8e951"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/cuscuzeira.png" alt="Cuscuzeira" />
+          <div class="gift-details">Cuscuzeira<br />R$ 136,81</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-1179f2ff-6054-4547-81fe-93e987f15e3a"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Depurador.png" alt="Depurador de Ar" />
+          <div class="gift-details">Depurador de Ar<br />R$ 484,11</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-f849cbeb-5230-4afe-b4bc-955697fe3160"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/escorredor-de-louca.png" alt="Escorredor de Louça" />
+          <div class="gift-details">Escorredor de Louças<br />R$ 210,48</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-b8b92427-77bd-4749-9a92-b39ef0557ddf"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/espremedor.png" alt="Espremedor" />
+          <div class="gift-details">Espremedor<br />R$ 157,86</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-c7f69bd3-88f4-487b-8847-c4d4d297c7ea"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/ferro-de-passar.png" alt="Ferro de Passar" />
+          <div class="gift-details">Ferro de Passar<br />R$ 136,81</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-46b377bb-45a6-41e6-b5d7-439f37bf9754"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/forma-de-bolo.png" alt="Forma de Bolo" />
+          <div class="gift-details">Formas de Bolo<br />R$ 105,24</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-65fc09be-b9a4-4a79-8d30-a2b66f14ecc5"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/garrafa-de-cafe.png" alt="Garrafa Térmica" />
+          <div class="gift-details">Garrafa Térmica<br />R$ 84,19</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-2780609b-d9fb-4144-9f7a-0d5e80489c6e"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Grill.png" alt="Grill" />
+          <div class="gift-details">Grill<br />R$ 221,01</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-188fc17c-6610-4ec7-9f36-c090fc6ecd2a"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/jarra-de-vidro.png" alt="Jarra de Suco" />
+          <div class="gift-details">Jarra de Vidro<br />R$ 73,67</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-013183ec-7b4d-403d-933a-36f556fb753d"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Jogo-Churras.png" alt="Jogo de Churrasco" />
+          <div class="gift-details">Jogo de Churrasco<br />R$ 94,72</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-dfe9d13a-508a-4c4d-a7af-2de004998c3a"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/jogo-de-cama.png" alt="Jogo de Cama" />
+          <div class="gift-details">Jogo de Cama Queen<br />R$ 263,10</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-be5c2190-c28d-4620-af0c-842ec82c72bd"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Jogo-de-Panela.png" alt="Jogo de Panelas" />
+          <div class="gift-details">Jogo de Panelas<br />R$ 736,69</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-057265fb-13cd-4c35-91d9-cdc1acd76bc0"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/jogo-de-talheres.png" alt="Jogo de Talheres" />
+          <div class="gift-details">Jogo de Talheres<br />R$ 189,43</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-19ff0a99-1b8b-4c81-83a7-e92fd522e814"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/jogo-de-tacas-vinho.png" alt="Conjunto de Taças de Vinho" />
+          <div class="gift-details">Conjunto de Taças de Vinho<br />R$ 147,34</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-23215146-5cdd-4fd2-b016-cafcba8f5bdd"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/jogo-de-tolha.png" alt="Jogo de Toalhas" />
+          <div class="gift-details">Jogo de Toalhas<br />R$ 168,39</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-4230de08-68af-406c-930d-ebd6687b12cd"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/jogo-de-xicaras.png" alt="Conjunto de Xicaras" />
+          <div class="gift-details">Conjunto de Xicaras<br />R$ 105,24</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-6c6dfb9f-a7a4-4d4e-9ecf-a59f20249c3d"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/liquidificador.png" alt="Liquidificador" />
+          <div class="gift-details">Liquidificador<br />R$ 294,67</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-a6479596-83f7-47b0-94ae-e79345f40c51"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Microondas.png" alt="Microondas" />
+          <div class="gift-details">Microondas<br />R$ 631,45</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-3e4e44a5-45c2-4c3f-b884-7a2bc65a8779"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/mixer.png" alt="Mixer" />
+          <div class="gift-details">Mixer<br />R$ 147,34</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-4d98b6a9-94ec-4ff7-a4d3-30770752ed75"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/moedor-graos.png" alt="Moedor de Grãos" />
+          <div class="gift-details">Moedor de Grãos<br />R$ 136,81</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-9b6a2205-4945-4876-abbf-0c60eeb2ab3d"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/panela-de-pressao.png" alt="Panela de Pressão" />
+          <div class="gift-details">Panela de Pressão<br />R$ 210,48</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-f344baa4-4c8a-4417-905e-9e58132da573"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/panificadora.png" alt="Panificadora" />
+          <div class="gift-details">Panificadora<br />R$ 578,83</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-317e489b-3b04-41d9-b855-65de07d6e2c4"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/pipoqueira.png" alt="Pipoqueira" />
+          <div class="gift-details">Pipoqueira<br />R$ 152,60</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-ca8112ab-7ad8-4009-b739-69e5cae133f1"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/processador-de-alimentos.png" alt="Processador de Alimentos" />
+          <div class="gift-details">Processador de Alimentos<br />R$ 273,63</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-f7c05b5c-f20b-4ff1-99fa-b6d5eceed63d"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/robo-aspirador.png" alt="Robô Aspirrador" />
+          <div class="gift-details">Robô Aspirador<br />R$ 1.999,58</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-17f67d6a-f3a4-4672-a6d5-e03667d67caf"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/sanduicheira.png" alt="Sanduicheira" />
+          <div class="gift-details">Sanduicheira<br />R$ 126,29</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-71582f72-fc93-434f-ab33-3cf5a635f27a"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/tabua-de-passar.png" alt="Tabua de Passar" />
+          <div class="gift-details">Tabua de Passar<br />R$ 94,72</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-1c5f740a-34f5-4eac-97a4-6e79395b0d05"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+        <li class="gift-item">
+          <img src="./Lista-de-Presentes/Utensilios.png" alt="Utensílios de Cozinha" />
+          <div class="gift-details">Utensílios de Cozinha<br />R$ 126,29</div>
+          <a href="https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=196072609-ae355c78-34ba-4886-887a-69dcc780af61"
+            target="_blank" class="buy-button">Comprar</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="ramo-divisor">
+    <img src="./img/oliveira.png" alt="" />
+  </div>
+
+  <footer>
+    <p>Feito com <span>❤</span> por Gustavo & Jéssica</p>
+  </footer>
+
+  <a href="#home" class="back-to-top" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </a>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

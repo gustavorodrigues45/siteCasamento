@@ -1,0 +1,640 @@
+/* Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* Suaviza a rolagem */
+}
+
+:root {
+  /* Variáveis originais do siteCasamento */
+  --background-color: #f7f9fa;
+  --color-green-700: #718355;
+  --color-green-500: #87986a;
+  --color-green-300: #b7c0a8;
+  --color-white: #f8f9fa;
+  --color-black: #000000;
+
+  /* Variáveis novas do dashboard (sitequejeje) */
+  --bg:#f6efe7;
+  --accent:#b56549;
+  --accent-dark:#8d4a34;
+  --cream:#fff8f1;
+  --text:#403534;
+  --shadow:0 8px 24px rgba(0,0,0,.08);
+
+  /* svg rosa para decorar */
+  --rose-svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23f3a6b5' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.74 0 3.41.99 4.22 2.44C11.09 4.99 12.76 4 14.5 4 17.01 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E");
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color-green-500);
+  text-align: center;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  font-family:"Montserrat", sans-serif;
+  line-height:1.5;
+}
+
+/* Novos estilos globais de fontes */
+h1,h2,h3{font-family:"Playfair Display", serif;color:var(--accent-dark);}
+.script-title{font-family:"Great Vibes", cursive;color:var(--accent);font-size:3rem;margin:1rem 0;}
+.section-title{text-align:center;margin-bottom:2rem;font-size:2rem;font-weight:600;color:var(--accent-dark);}
+
+
+header {
+  background: var(--color-green-300);
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: none;
+}
+
+nav ul li {
+  padding: 2px;
+  flex: 1 1 120px;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  margin-bottom: 10px; /* Espaço entre a logo e o menu */
+}
+
+.logo img {
+  width: 100px; /* Tamanho da logo */
+}
+
+.menu {
+  display: flex;
+  justify-content: center; /* Centraliza os itens do menu */
+  list-style: none;
+  padding: 0;
+}
+
+/* ================================================= */
+/* ===== SEÇÃO HOME ANTIGA (G&J) FOI REMOVIDA ===== */
+/* ================================================= */
+
+
+/* ========================================= */
+/* ===== NOVAS SEÇÕES ADICIONADAS AQUI ===== */
+/* ========================================= */
+
+/* ===================== SOBRE ===================== */
+.sobre{
+  position:relative;
+  background:var(--cream);
+  padding:4rem 1.5rem;
+  overflow:hidden;
+}
+.sobre__inner{
+  max-width:900px;
+  margin:0 auto;
+  text-align:center;
+}
+.sobre__avatar{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-bottom:1.5rem;
+}
+.sobre__avatar img{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #fff;
+  box-shadow:var(--shadow);
+}
+.sobre__texto{
+  max-width:620px;
+  margin:0 auto;
+  font-size:1rem;
+  color: var(--text); /* Corrigido para usar variável */
+}
+.floral{
+  position:absolute;
+  top:0;
+  width:200px;
+  height:200px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath fill='%23f7c97a' d='M64 0c5 12 5 20-4 26-9-6-9-14-4-26-14 5-22 11-26 22-4 11-4 22 0 33-11-4-19-2-26 4 12 5 20 5 26-4 6 9 6 17 4 26 11-4 18-12 22-26 4 14 11 22 22 26-2-9-2-17 4-26 6 9 14 9 26 4-7-6-15-8-26-4 4-11 4-22 0-33-4-11-12-17-26-22z'/%3E%3C/svg%3E") no-repeat center/contain;
+  opacity:.25;
+  pointer-events:none;
+}
+.floral--left{left:-40px;transform:rotate(-15deg);}
+.floral--right{right:-40px;transform:rotate(15deg);}
+.sobre__avatar img:first-child{object-position: top center;}
+
+/* ===================== TIMER ===================== */
+.timer{
+  padding:4rem 1.5rem;
+  background:var(--bg);
+}
+.timer__boxes{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+.tbox{
+  background:var(--cream);
+  padding:1.2rem 1.4rem;
+  border-radius:16px;
+  min-width:90px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+.tbox span{
+  font-size:2rem;
+  color:var(--accent-dark);
+  font-weight:600;
+  display:block;
+}
+.tbox small{
+  font-size:.8rem;
+  letter-spacing:.05rem;
+  color: var(--text); /* Corrigido para usar variável */
+}
+
+/* ===================== ROSAS DECORATIVAS (substitui parallax) ===================== */
+.deco-roses{
+  position:relative;
+  overflow:hidden;
+}
+.deco-roses::before,
+.deco-roses::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    var(--rose-svg),
+    var(--rose-svg),
+    var(--rose-svg),
+    var(--rose-svg),
+    var(--rose-svg),
+    var(--rose-svg);
+  background-repeat:no-repeat;
+  background-size:42px 42px,36px 36px,28px 28px,50px 50px,32px 32px,38px 38px;
+  background-position:
+    10% 15%,
+    85% 25%,
+    20% 80%,
+    75% 70%,
+    45% 5%,
+    60% 90%;
+  opacity:.18;
+  pointer-events:none;
+  z-index:0;
+}
+.deco-roses::after{
+  animation:floatRoses 14s ease-in-out infinite;
+  opacity:.12;
+  filter:blur(.5px);
+}
+@keyframes floatRoses{
+  0%,100%{
+    background-position:
+      10% 15%,
+      85% 25%,
+      20% 80%,
+      75% 70%,
+      45% 5%,
+      60% 90%;
+  }
+  50%{
+    background-position:
+      13% 12%,
+      82% 28%,
+      23% 77%,
+      72% 73%,
+      48% 8%,
+      57% 87%;
+  }
+}
+.deco-roses > *{position:relative;z-index:1;}
+
+/* =================================== */
+/* ===== FIM DAS SEÇÕES ADICIONADAS ===== */
+/* =================================== */
+
+
+/* Seção Ramo Divisor */
+.ramo-divisor img {
+  width: 250px;
+}
+
+/* Seção Cerimônia e Recepção */
+.ceremony-container,
+.reception-container,
+.gifts-container,
+.presence-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* h1 da seção (Recepção, Presentes) usa o .section-title agora */
+#ceremony h1,
+#reception h1,
+#gifts h1,
+#presence h1 {
+  font-size: 2rem;
+  font-family: "Bodoni Moda", serif;
+  color: var(--color-green-700); /* Mantendo cor original do siteCasamento */
+}
+
+.ceremony-info,
+.reception-info,
+.gifts-info,
+.presence-info {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  line-height: 1.6rem;
+  margin: 10px 0;
+  width: 90%;
+}
+
+.ceremony-image img,
+.reception-image img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 380px;
+  border-radius: 10px;
+}
+
+/* Lista de Presentes */
+#gifts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.gift-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-white);
+}
+
+.gift-details {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.gift-item {
+  background: var(--color-green-300);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.gift-item img {
+  width: 100px;
+  height: auto;
+}
+
+.buy-button {
+  background: var(--color-green-500);
+  color: var(--color-white);
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.confirm-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espaço superior */
+}
+
+.confirm-button {
+  display: inline-block;
+  background-color: var(--color-green-500); /* Cor verde do site */
+  color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: var(--color-green-700); /* Cor mais escura no hover */
+}
+
+footer {
+  background: var(--color-green-300); /* Mesma cor do header */
+  color: var(--color-white);
+  text-align: center;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+footer span {
+  color: red; /* Coração vermelho */
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  background-color: var(--color-green-700);
+  transform: translateY(-3px);
+}
+
+.back-to-top svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* Responsivo para telas maiores */
+@media (min-width: 768px) {
+  .logo img {
+    width: 130px; /* Tamanho da logo */
+  }
+
+  nav ul li a {
+    font-size: 1.3rem; /* Aumenta o tamanho da fonte do menu em telas maiores */
+  }
+
+  /* Estilos .home removidos daqui */
+
+  .ceremony-container,
+  .reception-container,
+  .gifts-container,
+  .presence-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ceremony-info,
+  .reception-info,
+  .gifts-info,
+  .presence-info {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    line-height: 1.6rem;
+    margin: 10px 0;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  iframe {
+    width: 700px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Novos estilos responsivos */
+  .section-title{font-size:1.8rem;}
+  .script-title{font-size:2.6rem;}
+}
+
+@media (min-width: 1024px) {
+  nav .logo {
+    margin: 10px 0 0 120px;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between; /* Espaço entre logo e menu */
+    margin-right: 100px;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    font-size: 1.7rem;
+  }
+
+  nav ul li {
+    flex: auto;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  #ceremony h1,
+  #reception h1,
+  #gifts h1,
+  #presence h1 {
+    font-size: 4rem;
+    font-family: "Bodoni Moda", serif;
+  }
+
+  /* Estilos #home removidos daqui */
+
+  /* Seção Ramo Divisor */
+  .ramo-divisor img {
+    width: 350px;
+  }
+
+  .ceremony-info,
+  .reception-info,
+  .gifts-info,
+  .presence-info {
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    line-height: 1.6rem;
+    margin: 10px 0;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ceremony-container,
+  .reception-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    height: 87vh;
+    box-sizing: border-box;
+  }
+  
+  .ceremony-image img,
+  .reception-image img {
+    width: auto;
+    /*max-width: 100%;*/
+    border-radius: 10px;
+    height: 82vh;
+  }
+  
+  .ceremony-text,
+  .reception-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    height: 100%; /* ocupa a altura total */
+    overflow-y: auto; /* se o conteúdo for maior, permite rolagem */
+    gap: 20px;
+  }
+  
+  .ceremony-text iframe,
+  .reception-text iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  } 
+  
+  #gifts {
+    padding: 40px;
+  }
+
+  .gift-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .gift-item {
+    background: var(--color-green-300);
+    color: var(--color-white);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .gift-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+
+  .gift-item img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 16px;
+    object-fit: contain;
+  }
+
+  .gift-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 12px;
+  }
+
+  .buy-button {
+    background-color: var(--color-green-500);
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+
+  .buy-button:hover {
+    background-color: var(--color-green-700);
+  }
+}
+
+/* ===== CÓDIGO DA GALERIA HOVER (CORRIGIDO) ===== */
+
+/* O container para a galeria de imagens */
+.gallery-hover-container {
+  display: flex;
+  width: 100%;
+  height: 83vh; /* Você pode ajustar esta altura */
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* Garante que nada "vaze" */
+}
+
+/* Estilos para cada imagem na galeria */
+.gallery-hover-image {
+  /* Configuração inicial (imagem "fechada") */
+  flex-grow: 1; /* Faz com que todas comecem com o mesmo tamanho */
+  width: 15px; /* Define uma largura base pequena */
+  opacity: 0.5; /* Deixa a imagem meio apagada */
+  object-fit: cover; /* Garante que a imagem cubra o espaço */
+  
+  /* A mágica da transição */
+  transition: all 0.5s ease-in-out;
+}
+
+/* O efeito de "abrir" quando o mouse passa por cima */
+.gallery-hover-image:hover {
+  flex-grow: 1.2;
+  opacity: 1.0;
+}
+
+
+/* ====================================================== */
+/* ===== SEÇÃO .intro ANTIGA FOI REMOVIDA (L481-542) ===== */
+/* ====================================================== */
+
+
+/* Novos Media Queries (para telas pequenas, vindos do dashboard.css) */
+@media (max-width:600px){
+  .sobre__avatar img{width:95px;height:95px;}
+  .tbox{min-width:80px;padding:1rem 1.1rem;}
+  .tbox span{font-size:1.7rem;}
+}
