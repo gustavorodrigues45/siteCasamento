@@ -317,13 +317,20 @@ iframe {
 
 .gift-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* <--- MUDADO PARA 2 COLUNAS */
-  gap: 15px; /* Pode reduzir para 10px se preferir */
+  grid-template-columns: repeat(1, 1fr); /* 1 coluna por padrão (mobile pequeno) */
+  gap: 15px;
   justify-content: center;
   list-style: none;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
-  color: var(--color-black); /* texto visível em fundo branco (mobile) */
+  color: var(--color-black);
+}
+
+/* 2 colunas em celulares maiores e tablets pequenos */
+@media (min-width: 400px) {
+  .gift-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .gift-details {
   padding-top: 5px;
@@ -335,6 +342,14 @@ iframe {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #eeeeee;
+}
+
+.gift-item img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  margin: 0 auto 8px;
+  display: block;
 }
 
 .buy-button {
@@ -555,12 +570,10 @@ footer span {
     padding: 40px;
   }
 
+  /* 4 colunas em telas grandes (desktop) */
   .gift-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
-    max-width: 1024px;
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
   }
 
   .gift-item {
@@ -659,9 +672,10 @@ footer span {
 
   .gallery-hover-image {
     width: 100%; /* Largura total */
-    height: 300px; /* Altura fixa para cada imagem */
+    height: auto; /* Altura automática para não cortar */
     opacity: 1; /* Opacidade total */
     flex-grow: 1; /* Reseta o grow */
+    object-fit: contain; /* Mostra a foto completa sem cortar */
   }
 
   /* Desativa o efeito de hover no mobile */
@@ -694,10 +708,6 @@ footer span {
   .gifts-container, .gifts-info { width: 100%; padding: 0 12px; box-sizing: border-box; }
   .gift-list { width: 100%; margin: 0 auto; }
   .gift-item { width: 100%; box-sizing: border-box; }
-  .gift-item img { width: 70%; height: auto; margin: 0 auto; display:block; }
-
-  /* Reduce gallery height on small phones to avoid huge header space */
-  .gallery-hover-container { height: 45vh; }
 
   /* Smaller back-to-top to avoid overlapping content */
   .back-to-top { width:40px; height:40px; padding:6px; bottom:14px; right:14px; }

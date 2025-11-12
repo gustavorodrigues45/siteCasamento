@@ -62,5 +62,47 @@ window.addEventListener('scroll', () => {
       });
   }
 
+// Gallery click handler for mobile
+document.addEventListener('DOMContentLoaded', function() {
+  const galleryImages = document.querySelectorAll('.gallery-hover-image');
+  
+  galleryImages.forEach(image => {
+    image.addEventListener('click', function() {
+      // Cria um modal para mostrar a imagem em tela cheia
+      const modal = document.createElement('div');
+      modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      `;
+      
+      const img = document.createElement('img');
+      img.src = this.src;
+      img.alt = this.alt;
+      img.style.cssText = `
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: contain;
+      `;
+      
+      modal.appendChild(img);
+      document.body.appendChild(modal);
+      
+      // Fecha o modal ao clicar
+      modal.addEventListener('click', function() {
+        document.body.removeChild(modal);
+      });
+    });
+  });
+});
+
 // Inicialmente esconde
 backToTop.style.display = 'none';
