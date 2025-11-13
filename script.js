@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
 });
 
  function copiarPix() {
-    const codigoPix = '6441eb22-cc97-4401-9a09-f73a539d1a88';
+    const codigoPix = '00020126580014br.gov.bcb.pix0136cd1c879f-570e-417b-92de-59c28a6e250a5204000053039865802BR5925GUSTAVO DA ENCARNACAO ROD6006CANOAS62070503***630486B5-cc97-4401-9a09-f73a539d1a88';
     
     navigator.clipboard.writeText(codigoPix)
       .then(() => {
